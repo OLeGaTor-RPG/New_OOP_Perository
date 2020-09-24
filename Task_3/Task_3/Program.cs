@@ -6,32 +6,33 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            int a;
+                try
+                {
+                    Console.WriteLine("Введiть змiнну типу int");
+                    int a = Convert.ToInt32(Console.ReadLine());
+                    if (a.GetType() != typeof(int))
+                    {
+                        Console.WriteLine($"Неправильний тип {a} ");
+                    }
+                    Console.WriteLine("Введiть змiнну типу double");
+                    double b = Convert.ToDouble(Console.ReadLine());
+                    if (b.GetType() != typeof(double))
+                    {
+                        Console.WriteLine($"Неправильний тип {b} ");
+                    }
+                    Console.WriteLine("Введiть змiнну типу long");
+                    long c = Convert.ToInt64(Console.ReadLine());
+                    if (c.GetType() != typeof(long))
+                    {
+                        Console.WriteLine($"Неправильний тип {c} ");
+                    }
+                    Console.WriteLine($"a = {a}; b = {b}; c = {c}");
+                }
+                catch (System.FormatException)
+                {
+                    Console.WriteLine("Неправильний тип данних");
+                }
+            }
 
-            double b;
-
-            long c;
-
-            string temp;
-            do
-            {
-                Console.WriteLine("Введiть змiнну типу int");
-                temp = Console.ReadLine();
-            } while (!int.TryParse(temp, out a));
-
-            do
-            {
-                Console.WriteLine("Введiть змiнну типу double");
-                temp = Console.ReadLine();
-            } while (!double.TryParse(temp, out b));
-
-            do
-            {
-                Console.WriteLine("Введiть змiнну типу long");
-                temp = Console.ReadLine();
-            } while (!long.TryParse(temp, out c));
-
-            Console.WriteLine($"a = {a}; b = {b}; c = {c}");
         }
     }
-}
