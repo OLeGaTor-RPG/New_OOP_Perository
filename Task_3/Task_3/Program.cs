@@ -1,38 +1,41 @@
 ﻿using System;
-
-namespace Task_3
+using System.Runtime.ConstrainedExecution;
+namespace Task3
 {
     class Program
     {
         static void Main(string[] args)
         {
-                try
+            int a;
+
+            double b;
+
+            long c;
+;
+
+            bool bl = false;
+            {
+                while (bl != true)
                 {
-                    Console.WriteLine("Введiть змiнну типу int");
-                    int a = Convert.ToInt32(Console.ReadLine());
-                    if (a.GetType() != typeof(int))
+                    bl = true;
+                    try
                     {
-                        Console.WriteLine($"Неправильний тип {a} ");
+                        Console.WriteLine("Введіть змінну типу int");
+                        a = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введіть змінну типу double");
+                        b = Convert.ToInt64(Console.ReadLine());
+                        Console.WriteLine("Введіть змінну типу long");
+                        c = Convert.ToInt32(Console.ReadLine());
                     }
-                    Console.WriteLine("Введiть змiнну типу double");
-                    double b = Convert.ToDouble(Console.ReadLine());
-                    if (b.GetType() != typeof(double))
+                    catch (System.FormatException)
                     {
-                        Console.WriteLine($"Неправильний тип {b} ");
+                        bl = false;
+                        Console.WriteLine("Неправильний тип");
+                        Console.WriteLine("Попробуйте ще раз: ");
                     }
-                    Console.WriteLine("Введiть змiнну типу long");
-                    long c = Convert.ToInt64(Console.ReadLine());
-                    if (c.GetType() != typeof(long))
-                    {
-                        Console.WriteLine($"Неправильний тип {c} ");
-                    }
-                    Console.WriteLine($"a = {a}; b = {b}; c = {c}");
-                }
-                catch (System.FormatException)
-                {
-                    Console.WriteLine("Неправильний тип данних");
+                //Console.WriteLine($"a = {a}; b = {b}; c = {c}");
                 }
             }
-
         }
     }
+}
