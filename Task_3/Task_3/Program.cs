@@ -13,27 +13,27 @@ namespace Task3
             long c;
 ;
 
-            bool bl = false;
+            bool check = false;
             {
-                while (bl != true)
+                while (check != true)
                 {
-                    bl = true;
+                    check = true;
                     try
                     {
                         Console.WriteLine("Введіть змінну типу int");
                         a = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Введіть змінну типу double");
-                        b = Convert.ToInt64(Console.ReadLine());
+                        b = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Введіть змінну типу long");
                         c = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine($"a = {a}; b = {b}; c = {c}");
                     }
                     catch (System.FormatException)
                     {
-                        bl = false;
+                        check = false;
                         Console.WriteLine("Неправильний тип");
                         Console.WriteLine("Попробуйте ще раз: ");
                     }
-                //Console.WriteLine($"a = {a}; b = {b}; c = {c}");
                 }
             }
         }
