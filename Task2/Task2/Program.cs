@@ -4,7 +4,7 @@ namespace Task2
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             try
             {
@@ -21,7 +21,7 @@ namespace Task2
             }
             catch (System.FormatException)
             {
-                Console.WriteLine("Неправильний тип данних");
+                Console.WriteLine("Неправильний тип данних");               
             }
         }
 
