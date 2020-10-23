@@ -61,6 +61,7 @@ namespace Task_4
         {
             static void Main()
             {
+                List<int> list = new List<int>();
                 Console.OutputEncoding = System.Text.Encoding.Unicode;
                 Console.InputEncoding = System.Text.Encoding.Unicode;
                 int check;
@@ -88,35 +89,51 @@ namespace Task_4
                 }
                 else
                 {
-                    int a, b, c;
-                    double d;
-                    List<int> list = new List<int>();
-                    string temp;
-                    FileStream file1 = new FileStream("E:\\x,y,R.txt", FileMode.Open, FileAccess.Read);
-                    StreamReader wr = new StreamReader(file1);
+                    FileStream file3 = new FileStream("E:\\x,y,R.txt", FileMode.Create, FileAccess.ReadWrite);
+                    StreamWriter wr3 = new StreamWriter(file3);
+                    string temp2;
+                    Console.WriteLine("Введіть x,y,R = ");
+                    temp2 = Console.ReadLine();
+                    wr3.Write(temp2); // записуємо в файл
+                    wr3.Close();
+
+
+                    FileStream file4 = new FileStream("E:\\x,y,R.txt", FileMode.Open, FileAccess.Read);
+                    StreamReader wr4 = new StreamReader(file4);
                     while (true)
                     {
-                        temp = wr.ReadLine();
-                        if (temp != null)
+                        string temp3;
+                        string[] res2;
+                        temp3 = wr4.ReadLine();
+                        if (temp3 != null)
                         {
-                            list.Add(Int32.Parse(temp));
+                            char[] chSeparators = new char[] { ' ' };
+                            res2 = temp3.Split(chSeparators, StringSplitOptions.None);
+                            foreach (string i in res2)
+                                list.Add(Convert.ToInt32(i));
                         }
                         else
                         {
                             break;
                         }
-                        a = list[0];
-                        b = list[1];
-                        c = list[2];
-                        Console.WriteLine("Введіть масштабування 1 до ? :");
-                        d = Convert.ToDouble(Console.ReadLine());
-                        kolo.EnterR(c);
-                        kolo.Mashtab(d);
-                        kolo.GetInfo();
-                        kolo.CalcArea(c);
-                        kolo.CalcLength(c);
                     }
-                    wr.Close();
+                    foreach (int i in list)
+                        Console.WriteLine($"{i}");
+                    int a, b, c;
+                    double d;
+                   a = list[0];
+                   b = list[1];
+                   c = list[2];
+                   Console.WriteLine("Введіть масштабування 1 до ? :");
+                   d = Convert.ToDouble(Console.ReadLine());
+                    kolo.EnterX(a);
+                    kolo.EnterY(b);
+                   kolo.EnterR(c);
+                   kolo.Mashtab(d);
+                   kolo.GetInfo();
+                   kolo.CalcArea(c);
+                   kolo.CalcLength(c);
+                   
                 }
             }
         }
