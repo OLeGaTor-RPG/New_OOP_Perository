@@ -1,0 +1,13 @@
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\bin\Debug\netcoreapp3.1\Task6.exe
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\bin\Debug\netcoreapp3.1\Task6.deps.json
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\bin\Debug\netcoreapp3.1\Task6.runtimeconfig.json
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\bin\Debug\netcoreapp3.1\Task6.runtimeconfig.dev.json
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\bin\Debug\netcoreapp3.1\Task6.dll
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\bin\Debug\netcoreapp3.1\Task6.pdb
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\obj\Debug\netcoreapp3.1\Task6.csprojAssemblyReference.cache
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\obj\Debug\netcoreapp3.1\Task6.AssemblyInfoInputs.cache
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\obj\Debug\netcoreapp3.1\Task6.AssemblyInfo.cs
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\obj\Debug\netcoreapp3.1\Task6.csproj.CoreCompileInputs.cache
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\obj\Debug\netcoreapp3.1\Task6.dll
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\obj\Debug\netcoreapp3.1\Task6.pdb
+C:\Users\OLeGaToR\Source\Repos\New-OOP_Perository\Task6\Task6\obj\Debug\netcoreapp3.1\Task6.genruntimeconfig.cache
